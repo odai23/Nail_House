@@ -1,0 +1,142 @@
+.navbar_container {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 1rem;
+}
+.logo {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+.logo svg:hover {
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+}
+@media screen and (max-width: 431px) {
+  .nav_list {
+    display: none;
+  }
+  .navbar_container {
+    height: 90px;
+  }
+}
+
+.nav_list > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav_list > li > a {
+  display: flex;
+  align-items: center;
+  color: var(--main_blue);
+  padding: 30px 30px;
+  text-decoration: none;
+  height: 100%;
+  font-weight: 40;
+  position: relative;
+  font-weight: 300;
+}
+
+.nav_list > li > a:hover {
+  text-shadow: 1px 1px 15px var(--main_gold);
+  color: var(--main_gold);
+}
+
+.navbar_toggle {
+  display: none;
+}
+
+@media screen and (max-width: 431px) {
+  .nav_list {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100vw;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: -1;
+    background-color: transparent;
+  }
+  .nav_list.active {
+    background-color: transparent;
+    top: 130px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.5rem;
+  }
+  .navbar_toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 40px 40px;
+    cursor: pointer;
+    color: white;
+  }
+  .nav_list > li > a {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .logo {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  .nav_list {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100vw;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+  .nav_list.active {
+    background-color: transparent;
+    top: 130px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.5rem;
+  }
+  .navbar_toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 40px 40px;
+    cursor: pointer;
+    color: var(--main_blue);
+  }
+  .nav_list > li > a {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+}

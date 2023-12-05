@@ -1,0 +1,30 @@
+.location_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0;
+  background-image: url(../images/bg_66.jpg);
+}
+.title_kontakty {
+  color: var(--main_blue);
+  border: 1px solid var(--main_blue);
+  padding: 0.9rem;
+  border-radius: 0.3rem;
+}
+
+.contact_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  padding-top: 3rem;
+}
+
+.location {
+  text-align: center;
+}
+
+.map_container {
+  margin-top: 10px;
+}

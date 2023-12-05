@@ -1,0 +1,76 @@
+.slider_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  background-image: url(../images/bg_66.jpg);
+}
+.title_portfolio {
+  color: var(--main_blue);
+  border: 1px solid var(--main_blue);
+  padding: 0.9rem;
+  border-radius: 0.3rem;
+}
+.slider {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.right-arrow,
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: var(--main_blue);
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.right-arrow {
+  right: 70px;
+}
+
+.left-arrow {
+  left: 70px;
+}
+
+.slide {
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  transition-duration: 1s;
+}
+
+/* Media query for screens with a maximum width of 390 pixels */
+@media screen and (max-width: 400px) {
+  .slider {
+    height: auto;
+    padding: 20px; /* Adjust padding or any other styles based on your design */
+  }
+
+  .image {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .right-arrow,
+  .left-arrow {
+    top: calc(50% - 30px); /* Adjust the position */
+    font-size: 2rem; /* Adjust the font size */
+    right: 20px; /* Adjust the position */
+    left: 20px; /* Adjust the position */
+  }
+}

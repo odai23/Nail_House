@@ -1,0 +1,143 @@
+.footer_container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(1, 87, 180, 1) 0%,
+    rgba(150, 193, 238, 1) 100%,
+    rgba(99, 99, 99, 0.8127844887955182) 100%
+  );
+  padding: 50px 130px 40px 50px;
+}
+.footer_container > div {
+  flex-basis: 33%;
+}
+
+.footer_info {
+  color: white;
+}
+
+.footer_info > img {
+  width: 50%;
+  padding-left: 3rem;
+}
+.footer_info > p {
+  width: 90%;
+}
+.account_info {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  gap: 15px;
+}
+.list ul li {
+  height: 30px;
+}
+.list ul li:hover {
+  scale: 1.15;
+  transition: all 0.25s ease-in-out;
+}
+.list ul li a {
+  text-decoration: none;
+  color: white;
+}
+.up_page {
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 5px;
+}
+.up_page:hover {
+  background-color: white;
+  color: var(--main_gold);
+  border: none;
+  cursor: pointer;
+}
+
+.social_media_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+.social_media_footer > h2 {
+  color: white;
+  align-self: center;
+}
+
+.social_media_footer .icons {
+  display: flex;
+  gap: 20px;
+}
+.social_media_footer .icons > a > div {
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  border-radius: 3px;
+  box-shadow: 0px 5px 8px 0px rgba(24, 37, 71, 0.29);
+  position: relative;
+}
+
+.social_icon_fa {
+  background: linear-gradient(45deg, #1877f2, #4a90e2);
+}
+
+.social_icon_in {
+  background: linear-gradient(45deg, #8134af, #f58529);
+}
+.social_icon_wh {
+  background: #075e54;
+}
+.social_icon_tel {
+  background: #229ed9;
+}
+.social_media_footer .icons > a > div:hover {
+  scale: 1.1;
+}
+
+.inside_icon {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 431px) {
+  .footer_container {
+    flex-wrap: wrap;
+  }
+  .footer_container > div {
+    flex-basis: 100%;
+  }
+  .account_info {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .social_media_footer > h2 {
+    margin-left: 0;
+  }
+  .social_media_footer {
+    margin-bottom: 70px;
+  }
+}
