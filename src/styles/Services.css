@@ -27,6 +27,11 @@
   padding: 3rem;
   width: 100%;
 }
+@media screen and (max-width: 400px) {
+  .services {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
 
 .price_card {
   width: 100%;

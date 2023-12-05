@@ -58,19 +58,23 @@
 @media screen and (max-width: 400px) {
   .slider {
     height: auto;
-    padding: 20px; /* Adjust padding or any other styles based on your design */
+    padding: 20px;
   }
 
   .image {
-    width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
   }
 
-  .right-arrow,
+  .right-arrow {
+    top: calc(50% - 30px);
+    font-size: 2rem;
+    right: 20px;
+  }
   .left-arrow {
-    top: calc(50% - 30px); /* Adjust the position */
-    font-size: 2rem; /* Adjust the font size */
-    right: 20px; /* Adjust the position */
-    left: 20px; /* Adjust the position */
+    top: calc(50% - 30px);
+    font-size: 2rem;
+    right: 20px;
+    left: 20px;
   }
 }

@@ -35,8 +35,8 @@ const Landing = () => {
       <div className="landing_info_wrapper">
         <div className="landing_info">
           <h1>
-            OBJEDNEJTE SE NA MANIKÚRU V PRAZE ONLINE 3 POBOČKY: SMÍCHOV,
-            VINOHRADY A PANKRÁC
+            OBJEDNEJTE SE NA MANIKÚRU V PRAZE{" "}
+            <span>ONLINE 3 POBOČKY: SMÍCHOV, VINOHRADY A PANKRÁC</span>
           </h1>
           <div className="same_button">
             <button herf="https://w151091.alteg.io/widgetJS">

@@ -28,3 +28,9 @@
 .map_container {
   margin-top: 10px;
 }
+
+@media screen and (max-width: 400px) {
+  .contact_container {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}

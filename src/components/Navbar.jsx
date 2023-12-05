@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Navbar.css";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
@@ -18,6 +18,21 @@ const Navbar = () => {
   const handleLogoHover = () => {
     setLogoHovered(!logoHovered);
   };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      // Check if the click is outside the navbar and the menu is open
+      if (!event.target.closest(".navbar_container") && click) {
+        closeMenu();
+      }
+    };
+
+    document.body.addEventListener("mousedown", handleOutsideClick);
+
+    return () => {
+      document.body.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [click]);
 
   return (
     <div>

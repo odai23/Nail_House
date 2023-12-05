@@ -51,12 +51,14 @@
 
 .landing_info h1 {
   border-bottom: 1px solid var(--main_blue);
-  text-align: center;
+  padding-left: 20px;
   font-size: 40px;
   color: var(--main_blue);
-  display: flex;
-  justify-content: center;
   height: 50%;
+  font-weight: 10;
+}
+.landing_info h1 span {
+  font-weight: 600;
 }
 .locations_wrapper {
   width: 40%;
@@ -113,8 +115,8 @@
     height: 200px;
   }
   .landing_info h1 {
-    text-align: justify;
     padding: 0.7rem;
+    font-size: 18px;
   }
   .social_media {
     left: 10px;
@@ -126,7 +128,7 @@
     height: 500px;
   }
   .landing_info_wrapper {
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 70%;
     height: auto;
     gap: 20px;
