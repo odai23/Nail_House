@@ -4,25 +4,31 @@ import "../styles/About.css";
 const About = () => {
   return (
     <div className="about_container">
-      <div className="left_img">
-        <img src="/images/img_info3.jpg" alt="nails" />
-      </div>
-      <div className="about_info">
-        <div className="about_text">
-          <h3>Wlecome to</h3>
-          <h1>Nail House</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            provident modi co consectetur adipisicing elit. Nemo provident modi
-            co
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            provident modi co consectetur adipisicing elit. Nemo provident modi
-            co
-          </p>
-        </div>
-        <img  className="right_img" src="/images/img_info2.jpg" alt="nails" />
+      <img
+        className="about_back_img"
+        src="/images/Nail_House_logo_gold_2.svg"
+      />
+
+      <div className="about_text">
+        <h3>O NÁS</h3>
+        <h1>Nail House</h1>
+        <p className="about_questions">Proč zvolit právě náš salon?</p>
+        <p>
+          Všechny nástroje jsou podrobeny 3-stupňovému systému sterilizace,
+          protože se staráme o vaše zdraví
+        </p>
+        <p className="about_questions">Výhodné umístěni salonu:</p>
+        <p>
+          kousek od metra B Anděl, metra A Náměstí Míru a metra C Pražského
+          povstání. Jsme připraveni Vás obsloužit i mimo pracovní dobu! Stačí
+          zavolat nebo napsat zprávu. Nabízíme kvalitní manikuru odpovídající
+          všem modním trendům za přijatelnou cenu.
+        </p>
+        <p className="about_questions">Kvalitní služby</p>
+        <p>
+          čaj, káva, bonbony a šampaňské pro vás. Věrnostní karta pro stále
+          zákazníci, která dává slevu na manikúru až 100%!
+        </p>
       </div>
     </div>
   );
