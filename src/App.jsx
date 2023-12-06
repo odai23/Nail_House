@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
-// import About from "./components/About";
+import About from "./components/About";
 import Services from "./components/Services";
 import ImageSlider from "./components/ImageSlider";
 import { SliderData } from "./components/SliderData";
@@ -84,7 +84,7 @@ function App() {
           />
         </div>
       </div>
-      {/* <About /> */}
+      <About />
       <Maps />
       <Footer />
     </>

@@ -5,12 +5,10 @@
 }
 
 body {
-  background-image: url(/images/bg_6.jpg);
+  background-color: #181818;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 html {
   scroll-behavior: smooth;

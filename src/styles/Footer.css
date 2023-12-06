@@ -152,3 +152,28 @@
     margin-bottom: 150px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .footer_container {
+    flex-wrap: wrap;
+    padding: 50px 40px 40px 50px;
+  }
+  .footer_info {
+    padding-bottom: 40px;
+  }
+  .footer_info > img {
+    padding-left: 0;
+  }
+  .footer_container > div {
+    flex-basis: 100%;
+  }
+  .account_info {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .social_media_footer > h2 {
+    margin-left: 0;
+  }
+  .social_media_footer {
+    margin-bottom: 150px;
+  }
+}

@@ -7,7 +7,7 @@ const Maps = () => {
     <div id="Kontakty" className="location_wrapper">
       <h1 className="title_kontakty">Kontakty</h1>
       <div className="contact_container">
-        <div className="location">
+        <div className="location_maps">
           <h3>Smíchov</h3>
           <h4>
             <FaPhoneVolume />: 720 985 636
@@ -25,7 +25,7 @@ const Maps = () => {
           </div>
         </div>
 
-        <div className="location">
+        <div className="location_maps">
           <h3>Vinohrady</h3>
           <h4>
             <FaPhoneVolume />: 608 014 646
@@ -43,7 +43,7 @@ const Maps = () => {
           </div>
         </div>
 
-        <div className="location">
+        <div className="location_maps">
           <h3>Pankrác</h3>
           <h4>
             <FaPhoneVolume />: 724 328 830

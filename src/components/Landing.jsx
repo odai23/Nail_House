@@ -33,6 +33,7 @@ const Landing = () => {
         </ul>
       </div>
       <div className="landing_info_wrapper">
+        <img className="nail_bottel" src="/images/bg_10.png"/>
         <div className="landing_info">
           <h1>
             OBJEDNEJTE SE NA MANIKÚRU V PRAZE{" "}

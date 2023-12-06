@@ -3,13 +3,28 @@
   align-items: center;
   flex-direction: column;
   padding: 3rem 0;
-  background-image: url(../images/bg_66.jpg);
 }
 .title_kontakty {
   color: var(--main_blue);
   border: 1px solid var(--main_blue);
   padding: 0.9rem;
   border-radius: 0.3rem;
+}
+.location_maps {
+  text-align: center;
+  color: var(--main_blue);
+  font-family: "Inter", sans-serif;
+}
+.location_maps h3 {
+  color: #e63946;
+}
+.location_maps h4 {
+  color: #fff;
+}
+.location_maps h3,
+.location_maps h4,
+.location_maps p {
+  padding-bottom: 10px;
 }
 
 .contact_container {
@@ -21,15 +36,17 @@
   padding-top: 3rem;
 }
 
-.location {
-  text-align: center;
-}
-
 .map_container {
   margin-top: 10px;
 }
 
 @media screen and (max-width: 400px) {
+  .contact_container {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .contact_container {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }

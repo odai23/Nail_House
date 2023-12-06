@@ -3,14 +3,17 @@
   align-items: center;
   flex-direction: column;
   padding-top: 3rem;
-  background-image: url(../images/bg_66.jpg);
+  position: relative;
 }
 .title_portfolio {
   color: var(--main_blue);
   border: 1px solid var(--main_blue);
   padding: 0.9rem;
   border-radius: 0.3rem;
+  z-index: 10;
+  font-family: "Inter", sans-serif;
 }
+
 .slider {
   position: relative;
   height: 100vh;
@@ -56,6 +59,29 @@
 
 /* Media query for screens with a maximum width of 390 pixels */
 @media screen and (max-width: 400px) {
+  .slider {
+    height: auto;
+    padding: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-arrow {
+    top: calc(50% - 30px);
+    font-size: 2rem;
+    right: 20px;
+  }
+  .left-arrow {
+    top: calc(50% - 30px);
+    font-size: 2rem;
+    right: 20px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
   .slider {
     height: auto;
     padding: 20px;
