@@ -3,18 +3,19 @@ import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import About from "./components/About";
 import Services from "./components/Services";
-import ImageSlider from "./components/ImageSlider";
-import { SliderData } from "./components/SliderData";
 import "./App.css";
 import Maps from "./components/Maps";
 import Footer from "./components/Footer";
+import SwiperNew from "./components/Swiper";
+// import PricesLarg from "./components/PricesLarg";
 
 function App() {
   return (
     <>
       <Navbar />
       <Landing />
-      <ImageSlider slides={SliderData} />
+      <SwiperNew />
+      {/* <PricesLarg /> */}
       <div className="service_wrapper">
         <h1 className="title_služby">Služby a Ceny</h1>
         <div className="services">

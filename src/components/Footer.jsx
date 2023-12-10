@@ -32,7 +32,7 @@ const Footer = () => {
                 onClick={() => {
                   window.scrollTo(0, 0);
                 }}>
-                Nahuru
+                Nahoru
               </a>
             </li>
           </ul>

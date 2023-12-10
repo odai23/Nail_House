@@ -1,7 +1,7 @@
 .navbar_container {
   display: flex;
   align-items: center;
-  background-color: transparent;
+  background-color: var(--main_gold);
   justify-content: space-between;
   width: 100%;
   padding-top: 1rem;

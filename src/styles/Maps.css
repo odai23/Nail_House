@@ -16,10 +16,10 @@
   font-family: "Inter", sans-serif;
 }
 .location_maps h3 {
-  color: #e63946;
+  color: var(--main_blue);
 }
 .location_maps h4 {
-  color: #fff;
+  color: var(--main_blue);
 }
 .location_maps h3,
 .location_maps h4,
