@@ -11,29 +11,29 @@ const Landing = () => {
       <div className="social_media">
         <ul>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/nailhousecz/" target="_blank">
               <AiFillInstagram />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.facebook.com/nailhousecz" target="_blank">
               <RiFacebookBoxFill />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="tel:+420 720 985 636" target="_blank">
               <FaWhatsapp />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="http://t.me/nailhousecz" target="_blank">
               <BiLogoTelegram />
             </a>
           </li>
         </ul>
       </div>
       <div className="landing_info_wrapper">
-        <img className="nail_bottel" src="/images/bg_10.png"/>
+        <img className="nail_bottel" src="/images/bg_10.png" />
         <div className="landing_info">
           <h1>
             OBJEDNEJTE SE NA MANIKÚRU V PRAZE{" "}
