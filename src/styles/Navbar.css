@@ -86,7 +86,9 @@
     font-size: 1.3rem;
     padding: 40px 40px;
     cursor: pointer;
-    color: white;
+  }
+  .FaBars {
+    color: var(--main_blue);
   }
   .nav_list > li > a {
     width: 100vw;
